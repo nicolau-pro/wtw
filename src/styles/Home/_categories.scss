@@ -5,14 +5,23 @@
   }
   nav {
     ul {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
       list-style-type: none;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
       flex-direction: row;
       margin: 0;
       padding: 0;
+      -webkit-box-pack: start;
+      -ms-flex-pack: start;
       justify-content: flex-start;
 
       li {
+        -webkit-box-flex: 1;
+        -ms-flex: 1 1 0px;
         flex: 1 1 0px;
         text-align: center;
         background-color: $secondaryFocus;
@@ -31,7 +40,11 @@
 
         &.add {
           background-color: $secondary;
+          display: -webkit-box;
+          display: -ms-flexbox;
           display: flex;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
           justify-content: center;
           line-height: 30 * $pt;
 

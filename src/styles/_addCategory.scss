@@ -6,8 +6,15 @@
   position: absolute;
   top: 0;
   left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   z-index: 1;
 
@@ -30,16 +37,23 @@
     border-radius: 10 * $pt;
     padding: 0;
     min-height: 0;
+    -webkit-box-shadow: 0 25 * $pt 50 * $pt rgba(0, 0, 0, 0.7);
     box-shadow: 0 25 * $pt 50 * $pt rgba(0, 0, 0, 0.7);
 
     .header {
       background-color: $primary;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
       direction: row;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
       justify-content: space-between;
       padding: 10 * $pt;
       padding-bottom: 5 * $pt;
       color: $white;
+      @include noselect;
+
       * {
         margin: 0;
         padding: 0;
@@ -59,13 +73,21 @@
       background-color: lighten($text, 45%);
       color: $white;
       overflow: hidden;
+      @include noselect;
 
       ul {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         list-style-type: none;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
         flex-direction: row;
         margin: 0;
         padding: 0;
+        -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
         justify-content: space-evenly;
 
         li {
@@ -82,6 +104,7 @@
             padding-top: 5 * $pt;
             padding-bottom: 0 * $pt;
             border-radius: 10 * $pt 10 * $pt 0 * $pt 0 * $pt;
+            -webkit-box-shadow: 0 5 * $pt 15 * $pt black;
             box-shadow: 0 5 * $pt 15 * $pt black;
           }
         }
@@ -97,6 +120,7 @@
 
       label {
         text-transform: capitalize;
+        @include noselect;
       }
 
       .fields {

@@ -1,6 +1,10 @@
 .list {
   ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     padding: 0;
     margin: 0;
@@ -15,8 +19,15 @@
         background-color: $white;
         padding: 12 * $pt;
         border: 1px solid $lightGrey;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         text-align: center;
 
@@ -28,6 +39,7 @@
 
         &.selected {
           border-color: $secondary;
+          -webkit-box-shadow: 0 0 50 * $pt lighten($secondary, 30%);
           box-shadow: 0 0 50 * $pt lighten($secondary, 30%);
         }
 

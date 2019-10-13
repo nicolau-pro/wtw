@@ -7,8 +7,8 @@ header {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   height: 75px;
   padding: 22.5px;
   border-bottom: 3px solid #212529;
@@ -105,8 +105,8 @@ main aside nav ul {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   margin: 0;
   padding: 0;
   width: 100%;
@@ -130,14 +130,14 @@ main aside nav ul li > * {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   height: 75px;
   width: 75px;
   color: #ffffff;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 main aside nav ul li > * .current {
@@ -147,7 +147,7 @@ main aside nav ul li > * .current {
   margin: -7.95615px;
   position: absolute;
   -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  transform: rotate(45deg);
   top: 37.5px;
   left: 75px;
 }
@@ -212,8 +212,8 @@ main .content .home .list ul {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   padding: 0;
   margin: 0;
 }
@@ -230,12 +230,12 @@ main .content .home .list ul li.clientListItem {
   padding: 9px;
   border: 1px solid #e9ecef;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -251,7 +251,7 @@ main .content .home .list ul li.clientListItem * {
 main .content .home .list ul li.clientListItem.selected {
   border-color: #00c488;
   -webkit-box-shadow: 0 0 37.5px #5effce;
-          box-shadow: 0 0 37.5px #5effce;
+  box-shadow: 0 0 37.5px #5effce;
 }
 
 main .content .home .list ul li.clientListItem img {
@@ -317,19 +317,19 @@ main .content .home .categories nav ul {
   list-style-type: none;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   margin: 0;
   padding: 0;
   -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
 }
 
 main .content .home .categories nav ul li {
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 0px;
-          flex: 1 1 0px;
+  -ms-flex: 1 1 0px;
+  flex: 1 1 0px;
   text-align: center;
   background-color: #00865c;
   color: #ffffff;
@@ -352,8 +352,8 @@ main .content .home .categories nav ul li.add {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   line-height: 22.5px;
 }
 
@@ -378,8 +378,8 @@ main .content .home .display {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
 }
 
 main .content .home .display *:not(i) {
@@ -410,8 +410,8 @@ main .content .home .display > div > div.categoryCard {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 main .content .home .display > div > div.categoryCard > div {
@@ -423,8 +423,8 @@ main .content .home .display > div > div.categoryCard > div {
 
 main .content .home .display > div > div.categoryCard > div.header {
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   background-color: #e9ecef;
   padding-bottom: 3.75px;
 }
@@ -475,8 +475,8 @@ main .content .home .display > div > div.task div {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 main .content .home .display > div > div.task div span {
@@ -510,8 +510,8 @@ main .content .home .display > div > div.addTask {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   cursor: pointer;
   min-height: 105px;
 }
@@ -557,11 +557,11 @@ main .addCategory {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   z-index: 1;
 }
 
@@ -585,7 +585,7 @@ main .addCategory section {
   padding: 0;
   min-height: 0;
   -webkit-box-shadow: 0 18.75px 37.5px rgba(0, 0, 0, 0.7);
-          box-shadow: 0 18.75px 37.5px rgba(0, 0, 0, 0.7);
+  box-shadow: 0 18.75px 37.5px rgba(0, 0, 0, 0.7);
 }
 
 main .addCategory section .header {
@@ -595,11 +595,22 @@ main .addCategory section .header {
   display: flex;
   direction: row;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   padding: 7.5px;
   padding-bottom: 3.75px;
   color: #ffffff;
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Old versions of Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently supported by Chrome, Opera and Firefox */
 }
 
 main .addCategory section .header * {
@@ -621,6 +632,17 @@ main .addCategory section .progressBar {
   background-color: #8d98a3;
   color: #ffffff;
   overflow: hidden;
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Old versions of Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently supported by Chrome, Opera and Firefox */
 }
 
 main .addCategory section .progressBar ul {
@@ -630,13 +652,13 @@ main .addCategory section .progressBar ul {
   list-style-type: none;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   margin: 0;
   padding: 0;
   -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
 }
 
 main .addCategory section .progressBar ul li {
@@ -655,7 +677,7 @@ main .addCategory section .progressBar ul li.current {
   padding-bottom: 0px;
   border-radius: 7.5px 7.5px 0px 0px;
   -webkit-box-shadow: 0 3.75px 11.25px black;
-          box-shadow: 0 3.75px 11.25px black;
+  box-shadow: 0 3.75px 11.25px black;
 }
 
 main .addCategory section form {
@@ -668,6 +690,17 @@ main .addCategory section form > * {
 
 main .addCategory section form label {
   text-transform: capitalize;
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Old versions of Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently supported by Chrome, Opera and Firefox */
 }
 
 main .addCategory section form .fields {
