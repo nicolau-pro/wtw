@@ -6,9 +6,11 @@ https://drive.google.com/open?id=1gtskuODjVmr4oLVBbNey92cZIvseoVzL
 
 # To view run the following commands:
 
+```
 npm install
 npm install --save react-router-dom
 npm start
+```
 
 # Functionality:
 
