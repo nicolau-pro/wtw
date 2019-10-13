@@ -227,7 +227,7 @@ main .content .home .list ul li {
 
 main .content .home .list ul li.clientListItem {
   background-color: #ffffff;
-  padding: 7.5px;
+  padding: 9px;
   border: 1px solid #e9ecef;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -242,27 +242,38 @@ main .content .home .list ul li.clientListItem {
   text-align: center;
 }
 
-main .content .home .list ul li.clientListItem:hover {
-  cursor: pointer;
-  background-color: #ffffff;
-  border-width: 3px;
-  border-color: #00c488;
-}
-
-main .content .home .list ul li.clientListItem.selected {
-  border-color: #00c488;
-}
-
 main .content .home .list ul li.clientListItem * {
   display: inline-block;
   margin: 0 auto;
   text-align: center;
 }
 
+main .content .home .list ul li.clientListItem.selected {
+  border-color: #00c488;
+  -webkit-box-shadow: 0 0 37.5px #5effce;
+          box-shadow: 0 0 37.5px #5effce;
+}
+
 main .content .home .list ul li.clientListItem img {
   margin-bottom: 7.5px;
   width: 90px;
   height: 90px;
+}
+
+main .content .home .list ul li.clientListItem:hover {
+  cursor: pointer;
+  background-color: #ffffff;
+  border-width: 3px;
+  border-color: #00c488;
+  padding: 7.5px;
+}
+
+main .content .home .list ul li.clientListItem:hover img {
+  margin-bottom: 6.75px;
+}
+
+main .content .home .list ul li.clientListItem:hover.selected img {
+  margin-bottom: 7.5px;
 }
 
 main .content .home .list ul li.clientsListNav {

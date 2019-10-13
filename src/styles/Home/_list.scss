@@ -13,23 +13,12 @@
 
       &.clientListItem {
         background-color: $white;
-        padding: 10 * $pt;
+        padding: 12 * $pt;
         border: 1px solid $lightGrey;
         justify-content: center;
         flex-direction: column;
         display: flex;
         text-align: center;
-
-        &:hover {
-          cursor: pointer;
-          background-color: $white;
-          border-width: 3px;
-          border-color: $secondary;
-        }
-
-        &.selected {
-          border-color: $secondary;
-        }
 
         * {
           display: inline-block;
@@ -37,10 +26,33 @@
           text-align: center;
         }
 
+        &.selected {
+          border-color: $secondary;
+          box-shadow: 0 0 50 * $pt lighten($secondary, 30%);
+        }
+
         img {
           margin-bottom: 10 * $pt;
           width: 120 * $pt;
           height: 120 * $pt;
+        }
+
+        &:hover {
+          cursor: pointer;
+          background-color: $white;
+          border-width: 3px;
+          border-color: $secondary;
+          padding: 10 * $pt;
+
+          img {
+            margin-bottom: 9 * $pt;
+          }
+
+          &.selected {
+            img {
+              margin-bottom: 10 * $pt;
+            }
+          }
         }
       }
 
