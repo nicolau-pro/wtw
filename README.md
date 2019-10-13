@@ -1,10 +1,10 @@
 # WTW UX UI Challenge
 
-# Full description:
+## Full description:
 
 https://drive.google.com/open?id=1gtskuODjVmr4oLVBbNey92cZIvseoVzL
 
-# To view run the following commands:
+## To view run the following commands:
 
 ```
 npm install
@@ -12,7 +12,7 @@ npm install --save react-router-dom
 npm start
 ```
 
-# Functionality:
+## Functionality:
 
 - All the buttons on the left side menu
 - (+) Category
