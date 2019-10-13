@@ -6,3 +6,11 @@
   -ms-user-select: none; /* Internet Explorer/Edge */
   user-select: none; /* Non-prefixed version, currently supported by Chrome, Opera and Firefox */
 }
+
+@mixin font_mono {
+  font-family: "Fira Mono", monospace;
+}
+
+@mixin font_sans {
+  font-family: "Yantramanav", sans-serif;
+}

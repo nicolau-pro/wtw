@@ -67,7 +67,31 @@ class App extends Component {
         name: "Amazon",
         logo: "media/Amazon_Logo.svg"
       }
-    ]
+    ],
+
+    newCategory: {
+      stage: false,
+      stages: [
+        {
+          section: "Client",
+          fields: { name: "text", description: "text" }
+        },
+        {
+          section: "legal",
+          fields: { owner: "text", legal_entity: "text" }
+        },
+        {
+          section: "assignment",
+          fields: { b_u: "text", team: "number" }
+        },
+        {
+          section: "details",
+          fields: { details: "text" },
+          details: true
+        }
+      ],
+      form: {}
+    }
   };
 
   componentDidMount() {
@@ -83,6 +107,54 @@ class App extends Component {
     this.setState({ links });
   };
 
+  handleAddCategoryClick = () => {
+    var newCategory = this.state.newCategory;
+    newCategory.stage = 0;
+    this.setState({ newCategory });
+  };
+
+  handleAddCategoryCancel = () => {
+    var newCategory = this.state.newCategory;
+    newCategory.stage = false;
+    this.setState({ newCategory });
+  };
+
+  handleAddCategoryFill = (field, value) => {
+    var newCategory = this.state.newCategory;
+    newCategory.form[field] = value;
+    this.setState(newCategory);
+  };
+
+  handleAddCategorySubmit = () => {
+    var newCategory = this.state.newCategory;
+    const totalStages = newCategory.stages.length;
+    var clients = this.state.clients;
+    var categories = clients[this.getSelectedClient()].categories;
+
+    if (newCategory.stage < totalStages - 1) {
+      newCategory.stage++;
+    } else {
+      const details = newCategory.form.details;
+      delete newCategory.form.details;
+      categories.push({
+        data: newCategory.form,
+        details
+      });
+      this.handleAddCategoryCancel();
+    }
+    this.setState(newCategory);
+  };
+
+  getSelectedClient = () => {
+    const clients = this.state.clients;
+    for (var i in clients) if (clients[i].selected) return i;
+  };
+
+  getSelectedCategory = c => {
+    const categories = this.state.clients[this.getSelectedClient()].categories;
+    for (var i in categories) if (categories[i].selected) return i;
+  };
+
   render() {
     return (
       <React.Fragment>
@@ -91,6 +163,11 @@ class App extends Component {
           links={this.state.links}
           clients={this.state.clients}
           asideClick={this.asideClick}
+          newCategory={this.state.newCategory}
+          handleAddCategoryClick={this.handleAddCategoryClick}
+          handleAddCategoryCancel={this.handleAddCategoryCancel}
+          handleAddCategoryFill={this.handleAddCategoryFill}
+          handleAddCategorySubmit={this.handleAddCategorySubmit}
         />
         <Footer />
       </React.Fragment>

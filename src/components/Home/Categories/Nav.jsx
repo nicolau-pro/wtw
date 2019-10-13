@@ -10,7 +10,7 @@ class Nav extends Component {
             <NavItem key={index} category={category}></NavItem>
           ))}
 
-          <li className="add">
+          <li className="add" onClick={this.props.handleAddCategoryClick}>
             <i className="im im-plus-circle"></i> Category
           </li>
         </ul>

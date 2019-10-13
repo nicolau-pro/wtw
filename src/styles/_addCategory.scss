@@ -1,0 +1,118 @@
+.addCategory {
+  display: block;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 1;
+
+  * {
+    text-align: center;
+  }
+
+  .full {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  section {
+    border: 2px solid $primary;
+    background: $white;
+    z-index: 1;
+    border-radius: 10 * $pt;
+    padding: 0;
+    min-height: 0;
+    box-shadow: 0 25 * $pt 50 * $pt rgba(0, 0, 0, 0.7);
+
+    .header {
+      background-color: $primary;
+      display: flex;
+      direction: row;
+      justify-content: space-between;
+      padding: 10 * $pt;
+      padding-bottom: 5 * $pt;
+      color: $white;
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      i {
+        cursor: pointer;
+        &:hover {
+          color: $accent;
+        }
+      }
+    }
+
+    .progressBar {
+      padding: 10 * $pt;
+      padding-bottom: 0;
+      background-color: lighten($text, 45%);
+      color: $white;
+      overflow: hidden;
+
+      ul {
+        display: flex;
+        list-style-type: none;
+        flex-direction: row;
+        margin: 0;
+        padding: 0;
+        justify-content: space-evenly;
+
+        li {
+          display: block;
+          font-size: 80%;
+          padding-bottom: 5 * $pt;
+          text-transform: capitalize;
+
+          &.current {
+            background-color: $white;
+            color: $text;
+            font-weight: bolder;
+            padding: 0 10 * $pt;
+            padding-top: 5 * $pt;
+            padding-bottom: 0 * $pt;
+            border-radius: 10 * $pt 10 * $pt 0 * $pt 0 * $pt;
+            box-shadow: 0 5 * $pt 15 * $pt black;
+          }
+        }
+      }
+    }
+
+    form {
+      padding: 10 * $pt 10%;
+
+      > * {
+        margin: 30 * $pt 10 * $pt;
+      }
+
+      label {
+        text-transform: capitalize;
+      }
+
+      .fields {
+        min-height: 12em;
+        textarea {
+          resize: none;
+        }
+      }
+
+      button {
+        text-transform: capitalize;
+      }
+    }
+  }
+
+  h3 {
+    @include font_sans;
+  }
+}

@@ -13,7 +13,12 @@ class Content extends Component {
         <Route
           exact
           path="/"
-          render={() => <Home clients={this.props.clients} />}
+          render={() => (
+            <Home
+              clients={this.props.clients}
+              handleAddCategoryClick={this.props.handleAddCategoryClick}
+            />
+          )}
         />
         <Route path="/create" render={props => <Create />} />
         <Route path="/recent" render={props => <Recent />} />

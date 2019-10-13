@@ -4,7 +4,7 @@
   align-items: stretch;
 
   *:not(i) {
-    font-family: "Yantramanav", sans-serif;
+    @include font_sans;
   }
 
   > div {

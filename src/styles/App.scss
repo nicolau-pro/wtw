@@ -1,9 +1,10 @@
+@import "mixins";
+
 * {
-  font-family: "Fira Mono", monospace;
+  @include font_mono;
 }
 
 @import "colors";
-@import "mixins";
 
 $pt: 0.75px;
 $fpt: $pt * 0.8;

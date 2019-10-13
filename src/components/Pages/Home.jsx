@@ -14,32 +14,37 @@ class Home extends Component {
     const selectedClient = this.props.clients[selectedIndex];
 
     return (
-      <div className="home container">
-        <section>
-          <h1>Clients</h1>
-        </section>
+      <React.Fragment>
+        <div className="home container">
+          <section>
+            <h1>Clients</h1>
+          </section>
 
-        <section className="list">
-          <ul>
-            <ListPrev />
-            {this.props.clients.map((client, index) => (
-              <ListItem key={index} client={client}></ListItem>
-            ))}
-            <ListNext />
-          </ul>
-        </section>
+          <section className="list">
+            <ul>
+              <ListPrev />
+              {this.props.clients.map((client, index) => (
+                <ListItem key={index} client={client}></ListItem>
+              ))}
+              <ListNext />
+            </ul>
+          </section>
 
-        <section className="categories">
-          <Nav categories={selectedClient.categories} />
-        </section>
+          <section className="categories">
+            <Nav
+              categories={selectedClient.categories}
+              handleAddCategoryClick={this.props.handleAddCategoryClick}
+            />
+          </section>
 
-        <section className="display row">
-          <Display
-            categories={selectedClient.categories}
-            index={selectedIndex}
-          />
-        </section>
-      </div>
+          <section className="display row">
+            <Display
+              categories={selectedClient.categories}
+              index={selectedIndex}
+            />
+          </section>
+        </div>
+      </React.Fragment>
     );
   }
 }

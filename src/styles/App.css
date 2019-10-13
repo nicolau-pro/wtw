@@ -544,6 +544,148 @@ main .dummy {
   color: #00865c;
 }
 
+main .addCategory {
+  display: block;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 1;
+}
+
+main .addCategory * {
+  text-align: center;
+}
+
+main .addCategory .full {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+main .addCategory section {
+  border: 2px solid #711984;
+  background: #ffffff;
+  z-index: 1;
+  border-radius: 7.5px;
+  padding: 0;
+  min-height: 0;
+  -webkit-box-shadow: 0 18.75px 37.5px rgba(0, 0, 0, 0.7);
+          box-shadow: 0 18.75px 37.5px rgba(0, 0, 0, 0.7);
+}
+
+main .addCategory section .header {
+  background-color: #711984;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 7.5px;
+  padding-bottom: 3.75px;
+  color: #ffffff;
+}
+
+main .addCategory section .header * {
+  margin: 0;
+  padding: 0;
+}
+
+main .addCategory section .header i {
+  cursor: pointer;
+}
+
+main .addCategory section .header i:hover {
+  color: #f9712b;
+}
+
+main .addCategory section .progressBar {
+  padding: 7.5px;
+  padding-bottom: 0;
+  background-color: #8d98a3;
+  color: #ffffff;
+  overflow: hidden;
+}
+
+main .addCategory section .progressBar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 0;
+  padding: 0;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+main .addCategory section .progressBar ul li {
+  display: block;
+  font-size: 80%;
+  padding-bottom: 3.75px;
+  text-transform: capitalize;
+}
+
+main .addCategory section .progressBar ul li.current {
+  background-color: #ffffff;
+  color: #212529;
+  font-weight: bolder;
+  padding: 0 7.5px;
+  padding-top: 3.75px;
+  padding-bottom: 0px;
+  border-radius: 7.5px 7.5px 0px 0px;
+  -webkit-box-shadow: 0 3.75px 11.25px black;
+          box-shadow: 0 3.75px 11.25px black;
+}
+
+main .addCategory section form {
+  padding: 7.5px 10%;
+}
+
+main .addCategory section form > * {
+  margin: 22.5px 7.5px;
+}
+
+main .addCategory section form label {
+  text-transform: capitalize;
+}
+
+main .addCategory section form .fields {
+  min-height: 12em;
+}
+
+main .addCategory section form .fields textarea {
+  resize: none;
+}
+
+main .addCategory section form button {
+  text-transform: capitalize;
+}
+
+main .addCategory h3 {
+  font-family: "Yantramanav", sans-serif;
+}
+
 footer {
   font-size: 12px;
   background-color: #2a2a2a;

@@ -8,7 +8,7 @@
   span,
   div,
   h1 {
-    font-family: "Yantramanav", sans-serif;
+    @include font_sans;
   }
 
   padding: 15 * $pt;
