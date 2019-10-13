@@ -1,0 +1,14 @@
+main {
+  display: flex;
+  height: calc(100vh - 150 * 0.75px);
+  @import "aside";
+  @import "content";
+
+  .dummy {
+    text-align: center;
+    padding: 30 * $pt;
+    margin-top: 20 * $pt;
+    border-top: 1px solid $lightGrey;
+    color: $secondaryFocus;
+  }
+}

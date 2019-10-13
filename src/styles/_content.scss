@@ -1,0 +1,32 @@
+.content {
+  background: white;
+  width: calc(100vw - 75px) !important;
+  overflow-x: hidden;
+  overflow-y: scroll;
+
+  p,
+  span,
+  div,
+  h1 {
+    font-family: "Yantramanav", sans-serif;
+  }
+
+  padding: 15 * $pt;
+
+  section {
+    padding: 30 * $pt 15 * $pt;
+
+    h1 {
+      text-align: center;
+      font-weight: 900;
+      padding: 0;
+      margin: 0;
+    }
+  }
+
+  .home {
+    @import "Home/list";
+    @import "Home/categories";
+    @import "Home/display";
+  }
+}

@@ -1,0 +1,17 @@
+* {
+  font-family: "Fira Mono", monospace;
+}
+
+@import "colors";
+@import "mixins";
+
+$pt: 0.75px;
+$fpt: $pt * 0.8;
+$breakSmall: 576px;
+$breakMedium: 768px;
+$breakLarge: 992px;
+$breakXLarge: 1200px;
+
+@import "header";
+@import "main";
+@import "footer";

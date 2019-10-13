@@ -1,0 +1,39 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  height: 100 * $pt;
+  padding: 30 * $pt;
+  border-bottom: 3px solid $text;
+
+  * {
+    display: inline-block;
+    cursor: pointer;
+    @include noselect;
+  }
+
+  .Logo {
+    height: 20 * $pt;
+    margin-top: 0 * $pt;
+
+    img {
+      height: 100%;
+    }
+  }
+
+  .Login {
+    display: flex;
+    color: $primary;
+
+    div {
+      display: flex;
+
+      span {
+        margin: 0 25 * $pt;
+      }
+    }
+
+    > *:hover {
+      color: $text;
+    }
+  }
+}

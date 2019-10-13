@@ -1,0 +1,63 @@
+.list {
+  ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+
+    li {
+      display: block;
+      width: 200 * $pt;
+      height: 200 * $pt;
+      border-radius: 10 * $pt;
+
+      &.clientListItem {
+        background-color: $white;
+        padding: 10 * $pt;
+        border: 1px solid $lightGrey;
+        justify-content: center;
+        flex-direction: column;
+        display: flex;
+        text-align: center;
+
+        &:hover {
+          cursor: pointer;
+          background-color: $white;
+          border-width: 3px;
+          border-color: $secondary;
+        }
+
+        &.selected {
+          border-color: $secondary;
+        }
+
+        * {
+          display: inline-block;
+          margin: 0 auto;
+          text-align: center;
+        }
+
+        img {
+          margin-bottom: 10 * $pt;
+          width: 120 * $pt;
+          height: 120 * $pt;
+        }
+      }
+
+      &.clientsListNav {
+        color: $secondaryFocus;
+        background-color: $white;
+        padding: 70 * $pt;
+        i {
+          font-size: 60 * $pt;
+        }
+
+        &:hover {
+          cursor: pointer;
+          color: $text;
+          background-color: $lighterGrey;
+        }
+      }
+    }
+  }
+}

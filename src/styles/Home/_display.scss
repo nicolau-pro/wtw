@@ -1,0 +1,133 @@
+.display {
+  padding: 30 * $pt;
+  display: flex;
+  align-items: stretch;
+
+  *:not(i) {
+    font-family: "Yantramanav", sans-serif;
+  }
+
+  > div {
+    padding: 10 * $pt;
+    display: block;
+    border: none;
+    height: auto;
+
+    > div {
+      border-width: 1px;
+      border-style: solid;
+      border-radius: 10 * $pt;
+      display: block;
+      height: 100%;
+      padding: 10 * $pt;
+
+      &.categoryCard {
+        padding: 0;
+        border-color: $lightGrey;
+        display: flex;
+        flex-direction: column;
+
+        > div {
+          display: flex;
+          padding: 10 * $pt;
+
+          &.header {
+            justify-content: space-between;
+            background-color: $lightGrey;
+            padding-bottom: 5 * $pt;
+
+            h3 {
+              padding: 0;
+              margin: 0;
+              line-height: 40 * $pt;
+            }
+
+            > div {
+              i {
+                padding-top: 15 * $pt;
+                line-height: 0 * $pt;
+                margin: 0 10 * $pt;
+                color: $secondaryFocus;
+                cursor: pointer;
+
+                &:hover {
+                  color: $text;
+                }
+              }
+            }
+          }
+
+          &.data {
+            ul {
+              margin: 0;
+              padding: 5 * $pt 15 * $pt 0 15 * $pt;
+              list-style: none;
+
+              &:first-of-type {
+                color: $secondaryFocus;
+                font-weight: 700;
+                text-transform: capitalize;
+              }
+            }
+          }
+        }
+      }
+
+      &.task {
+        border-color: $secondaryFocus;
+        background-color: $secondaryFocus;
+        color: $white;
+
+        p {
+          line-height: 30 * $pt;
+          margin: 30 * $pt 0;
+        }
+
+        div {
+          display: flex;
+          justify-content: space-between;
+
+          span {
+            opacity: 0.5;
+            @include noselect;
+          }
+
+          i {
+            cursor: pointer;
+
+            &:hover {
+              color: $warning;
+            }
+          }
+        }
+      }
+
+      &.addTask {
+        border-color: $secondary;
+        background-color: $secondary;
+        border-width: 0px;
+        display: flex;
+        justify-content: center;
+        cursor: pointer;
+        min-height: 140 * $pt;
+
+        &:hover {
+          background-color: $text;
+          i {
+            color: $warning;
+          }
+        }
+
+        > div {
+          display: flex;
+          margin: auto;
+
+          i {
+            font-size: 300%;
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+}

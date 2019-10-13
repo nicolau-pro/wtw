@@ -1,0 +1,550 @@
+* {
+  font-family: "Fira Mono", monospace;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 75px;
+  padding: 22.5px;
+  border-bottom: 3px solid #212529;
+}
+
+header * {
+  display: inline-block;
+  cursor: pointer;
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Old versions of Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently supported by Chrome, Opera and Firefox */
+}
+
+header .Logo {
+  height: 15px;
+  margin-top: 0px;
+}
+
+header .Logo img {
+  height: 100%;
+}
+
+header .Login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #711984;
+}
+
+header .Login div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .Login div span {
+  margin: 0 18.75px;
+}
+
+header .Login > *:hover {
+  color: #212529;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: calc(100vh - 150 * 0.75px);
+}
+
+main aside {
+  background-color: #711984;
+  color: white;
+  height: 100%;
+  width: 75px;
+  overflow: hidden;
+}
+
+main aside * {
+  font-size: 14.4px !important;
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Old versions of Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently supported by Chrome, Opera and Firefox */
+}
+
+main aside a {
+  text-decoration: none !important;
+}
+
+main aside nav {
+  height: 100%;
+}
+
+main aside nav ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+main aside nav ul li {
+  display: block;
+  width: 100%;
+  margin: 0;
+  height: 75px;
+  text-align: center;
+  text-transform: capitalize;
+  line-height: 0;
+  position: relative;
+}
+
+main aside nav ul li > * {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 75px;
+  width: 75px;
+  color: #ffffff;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main aside nav ul li > * .current {
+  background: #ffffff;
+  height: 22.5px;
+  width: 22.5px;
+  margin: -7.95615px;
+  position: absolute;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: 37.5px;
+  left: 75px;
+}
+
+main aside nav ul li > * .sensor {
+  background: none;
+  height: 75px;
+  width: 75px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+main aside nav ul li > *:hover, main aside nav ul li > *:active {
+  background-color: #ffffff;
+  color: #711984;
+}
+
+main aside nav ul li > * i {
+  line-height: 30px;
+  display: block;
+  font-size: 150% !important;
+}
+
+main aside nav ul li > * span {
+  margin-top: 15px;
+}
+
+main aside nav ul li.settings {
+  margin-top: auto;
+  color: #00c488 !important;
+}
+
+main .content {
+  background: white;
+  width: calc(100vw - 75px) !important;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  padding: 11.25px;
+}
+
+main .content p,
+main .content span,
+main .content div,
+main .content h1 {
+  font-family: "Yantramanav", sans-serif;
+}
+
+main .content section {
+  padding: 22.5px 11.25px;
+}
+
+main .content section h1 {
+  text-align: center;
+  font-weight: 900;
+  padding: 0;
+  margin: 0;
+}
+
+main .content .home .list ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0;
+  margin: 0;
+}
+
+main .content .home .list ul li {
+  display: block;
+  width: 150px;
+  height: 150px;
+  border-radius: 7.5px;
+}
+
+main .content .home .list ul li.clientListItem {
+  background-color: #ffffff;
+  padding: 7.5px;
+  border: 1px solid #e9ecef;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+}
+
+main .content .home .list ul li.clientListItem:hover {
+  cursor: pointer;
+  background-color: #ffffff;
+  border-width: 3px;
+  border-color: #00c488;
+}
+
+main .content .home .list ul li.clientListItem.selected {
+  border-color: #00c488;
+}
+
+main .content .home .list ul li.clientListItem * {
+  display: inline-block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+main .content .home .list ul li.clientListItem img {
+  margin-bottom: 7.5px;
+  width: 90px;
+  height: 90px;
+}
+
+main .content .home .list ul li.clientsListNav {
+  color: #00865c;
+  background-color: #ffffff;
+  padding: 52.5px;
+}
+
+main .content .home .list ul li.clientsListNav i {
+  font-size: 45px;
+}
+
+main .content .home .list ul li.clientsListNav:hover {
+  cursor: pointer;
+  color: #212529;
+  background-color: #f2f2f2;
+}
+
+main .content .home .categories {
+  margin-top: 22.5px;
+}
+
+main .content .home .categories * {
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Old versions of Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently supported by Chrome, Opera and Firefox */
+}
+
+main .content .home .categories nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 0;
+  padding: 0;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+main .content .home .categories nav ul li {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 0px;
+          flex: 1 1 0px;
+  text-align: center;
+  background-color: #00865c;
+  color: #ffffff;
+  padding: 7.5px 0;
+  border-style: solid;
+  border: 0;
+  margin: 0 1px;
+  border-bottom: 5px solid white;
+}
+
+main .content .home .categories nav ul li.selected {
+  color: #00865c;
+  background-color: #f2f2f2;
+  border-bottom-color: #00865c;
+}
+
+main .content .home .categories nav ul li.add {
+  background-color: #00c488;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  line-height: 22.5px;
+}
+
+main .content .home .categories nav ul li.add:hover {
+  color: #feb801 !important;
+}
+
+main .content .home .categories nav ul li.add i {
+  margin-right: 7.5px;
+  font-size: 22.5px !important;
+}
+
+main .content .home .categories nav ul li:hover:not(.selected) {
+  cursor: pointer;
+  color: #ffffff;
+  background-color: #212529;
+}
+
+main .content .home .display {
+  padding: 22.5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+main .content .home .display *:not(i) {
+  font-family: "Yantramanav", sans-serif;
+}
+
+main .content .home .display > div {
+  padding: 7.5px;
+  display: block;
+  border: none;
+  height: auto;
+}
+
+main .content .home .display > div > div {
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 7.5px;
+  display: block;
+  height: 100%;
+  padding: 7.5px;
+}
+
+main .content .home .display > div > div.categoryCard {
+  padding: 0;
+  border-color: #e9ecef;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .content .home .display > div > div.categoryCard > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 7.5px;
+}
+
+main .content .home .display > div > div.categoryCard > div.header {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #e9ecef;
+  padding-bottom: 3.75px;
+}
+
+main .content .home .display > div > div.categoryCard > div.header h3 {
+  padding: 0;
+  margin: 0;
+  line-height: 30px;
+}
+
+main .content .home .display > div > div.categoryCard > div.header > div i {
+  padding-top: 11.25px;
+  line-height: 0px;
+  margin: 0 7.5px;
+  color: #00865c;
+  cursor: pointer;
+}
+
+main .content .home .display > div > div.categoryCard > div.header > div i:hover {
+  color: #212529;
+}
+
+main .content .home .display > div > div.categoryCard > div.data ul {
+  margin: 0;
+  padding: 3.75px 11.25px 0 11.25px;
+  list-style: none;
+}
+
+main .content .home .display > div > div.categoryCard > div.data ul:first-of-type {
+  color: #00865c;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+main .content .home .display > div > div.task {
+  border-color: #00865c;
+  background-color: #00865c;
+  color: #ffffff;
+}
+
+main .content .home .display > div > div.task p {
+  line-height: 22.5px;
+  margin: 22.5px 0;
+}
+
+main .content .home .display > div > div.task div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .content .home .display > div > div.task div span {
+  opacity: 0.5;
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Old versions of Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently supported by Chrome, Opera and Firefox */
+}
+
+main .content .home .display > div > div.task div i {
+  cursor: pointer;
+}
+
+main .content .home .display > div > div.task div i:hover {
+  color: #feb801;
+}
+
+main .content .home .display > div > div.addTask {
+  border-color: #00c488;
+  background-color: #00c488;
+  border-width: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  min-height: 105px;
+}
+
+main .content .home .display > div > div.addTask:hover {
+  background-color: #212529;
+}
+
+main .content .home .display > div > div.addTask:hover i {
+  color: #feb801;
+}
+
+main .content .home .display > div > div.addTask > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+}
+
+main .content .home .display > div > div.addTask > div i {
+  font-size: 300%;
+  color: #ffffff;
+}
+
+main .dummy {
+  text-align: center;
+  padding: 22.5px;
+  margin-top: 15px;
+  border-top: 1px solid #e9ecef;
+  color: #00865c;
+}
+
+footer {
+  font-size: 12px;
+  background-color: #2a2a2a;
+  padding: 9px;
+  height: 37.5px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+footer a {
+  color: #e9ecef !important;
+}
+/*# sourceMappingURL=App.css.map */

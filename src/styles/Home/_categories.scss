@@ -1,0 +1,56 @@
+.categories {
+  margin-top: 30 * $pt;
+  * {
+    @include noselect;
+  }
+  nav {
+    ul {
+      display: flex;
+      list-style-type: none;
+      flex-direction: row;
+      margin: 0;
+      padding: 0;
+      justify-content: flex-start;
+
+      li {
+        flex: 1 1 0px;
+        text-align: center;
+        background-color: $secondaryFocus;
+        color: $white;
+        padding: 10 * $pt 0;
+        border-style: solid;
+        border: 0;
+        margin: 0 1px;
+        border-bottom: 5px solid white;
+
+        &.selected {
+          color: $secondaryFocus;
+          background-color: $lighterGrey;
+          border-bottom-color: $secondaryFocus;
+        }
+
+        &.add {
+          background-color: $secondary;
+          display: flex;
+          justify-content: center;
+          line-height: 30 * $pt;
+
+          &:hover {
+            color: $warning !important;
+          }
+
+          i {
+            margin-right: 10 * $pt;
+            font-size: 30 * $pt !important;
+          }
+        }
+
+        &:hover:not(.selected) {
+          cursor: pointer;
+          color: $white;
+          background-color: $text;
+        }
+      }
+    }
+  }
+}
