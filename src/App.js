@@ -136,8 +136,9 @@ class App extends Component {
     } else {
       const details = newCategory.form.details;
       delete newCategory.form.details;
+      const data = Object.assign({}, newCategory.form);
       categories.push({
-        data: newCategory.form,
+        data,
         details
       });
       this.handleAddCategoryCancel();
